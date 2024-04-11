@@ -14,13 +14,13 @@ namespace CapaEntidades
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ClienteId { get; set; }
         [Required]
-        [MaxLength(100)]
+        [MaxLength(150)]
         public string Nombre { get; set; }
         [Required]
 
         public int telefono { get; set; }
         [Required]
-        [MaxLength(100)]
+        [MaxLength(200)]
         public string direccion { get; set; }
 
         //Clientes pa la tiendita 
