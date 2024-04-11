@@ -23,6 +23,6 @@ namespace CapaEntidades
         [MaxLength(100)]
         public string direccion { get; set; }
 
-
+        //Clientes pa la tiendita 
     }
 }
