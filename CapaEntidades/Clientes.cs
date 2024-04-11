@@ -20,7 +20,7 @@ namespace CapaEntidades
 
         public int telefono { get; set; }
         [Required]
-        [MaxLength(150)]
+        [MaxLength(200)]
         public string direccion { get; set; }
 
         //Clientes pa la tiendita 
