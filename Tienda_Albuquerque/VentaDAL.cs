@@ -9,5 +9,30 @@ using System.Threading.Tasks;
 namespace CapaDatos
 {
     public class VentaDAL
-    {
+    {ContextoDB _db;
+
+        public int Guardar(Venta venta, int id = 0, bool esActualizacion = false)
+        {
+            _db = new ContextoDB();
+            int resultado;
+
+            if (esActualizacion)
+            {
+                venta.VentaId = id;
+
+                _db.Entry(venta).State = System.Data.Entity.EntityState.Modified;
+                _db.SaveChanges();
+            }
+            else
+            {
+                _db.Ventas.Add(venta);
+                _db.SaveChanges();
+            }
+
+            resultado = venta.VentaId;
+
+            return resultado;
+        }
+    }
+}
         
