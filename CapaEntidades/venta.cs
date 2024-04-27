@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    public class venta
+    public class Venta
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -21,6 +21,6 @@ namespace CapaEntidades
         //propiedad de navegacion
         public List<DetalleVenta> Detalles { get; set; }
 
-        //Feliz cumpleanios pa mi
+        
     }
 }

@@ -26,7 +26,7 @@ namespace CapaEntidades
         [Required]
         public int VentaId { get; set; }
         [ForeignKey("VentaId")]
-        public venta Venta { get; set; }
+        public Venta Venta { get; set; }
 
     }
 }

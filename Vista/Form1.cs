@@ -16,5 +16,13 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void MnMttnProductos_Click(object sender, EventArgs e)
+        {
+             MantenimientoProduto objMttProducto = new MantenimientoProduto ();
+            objMttProducto.ShowDialog();
+
+
+        }
     }
 }

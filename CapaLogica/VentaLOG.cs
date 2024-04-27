@@ -1,13 +1,13 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaEntidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tienda_Albuquerque
+namespace CapaLogica
 {
-    public class Class1
+    public class VentaLOG
     {
-        //Pan con queso
-    }
-}
+     
