@@ -10,4 +10,13 @@ namespace CapaLogica
 {
     public class VentaLOG
     {
+          VentaDAL _ventaDAL;
+
+        public int GuardarVenta(Venta venta)
+        {
+            _ventaDAL = new VentaDAL();
+            return _ventaDAL.Guardar(venta);
+        }
+    }
+}
      
