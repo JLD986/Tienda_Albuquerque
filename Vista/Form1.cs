@@ -29,5 +29,10 @@ namespace Vista
         {
 
         }
+
+        private void MnRegistroVenta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

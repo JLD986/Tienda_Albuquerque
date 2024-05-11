@@ -76,6 +76,7 @@
             this.MnRegistroVenta.Name = "MnRegistroVenta";
             this.MnRegistroVenta.Size = new System.Drawing.Size(180, 22);
             this.MnRegistroVenta.Text = "Registro de Venta";
+            this.MnRegistroVenta.Click += new System.EventHandler(this.MnRegistroVenta_Click);
             // 
             // Form1
             // 
