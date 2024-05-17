@@ -72,7 +72,7 @@ namespace CapaVista
                     }
                     else if (TablaCategorias.Columns[e.ColumnIndex].Name.Equals("Eliminar"))
                     {
-                        var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar La Categoria?", "Tienda AS | Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar La Categoria?", "Tienda Albuquerque | Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (ValidarEliminar == DialogResult.Yes)
                         {
@@ -82,13 +82,13 @@ namespace CapaVista
 
                             if (resultado > 0)
                             {
-                                MessageBox.Show("Categoria Eliminada con Exito", "Tienda AS | Categorias",
+                                MessageBox.Show("Categoria Eliminada con Exito", "Tienda Albuquerque | Categorias",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 CargarCategorias();
                             }
                             else
                             {
-                                MessageBox.Show("La Categoria no se Elimino", "Tienda AS | Categoria",
+                                MessageBox.Show("La Categoria no se Elimino", "Tienda Albuquerque | Categoria",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }

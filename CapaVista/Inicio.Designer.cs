@@ -81,11 +81,12 @@
             this.Ventas.Name = "Ventas";
             this.Ventas.Size = new System.Drawing.Size(61, 21);
             this.Ventas.Text = "Ventas";
+            this.Ventas.Click += new System.EventHandler(this.Ventas_Click);
             // 
             // realizarVentaToolStripMenuItem
             // 
             this.realizarVentaToolStripMenuItem.Name = "realizarVentaToolStripMenuItem";
-            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.realizarVentaToolStripMenuItem.Text = "Hacer Venta";
             this.realizarVentaToolStripMenuItem.Click += new System.EventHandler(this.realizarVentaToolStripMenuItem_Click);
             // 

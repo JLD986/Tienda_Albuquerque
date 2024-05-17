@@ -78,7 +78,7 @@ namespace CapaVista
                     else if (TablaProductos.Columns[e.ColumnIndex].Name.Equals("Eliminar"))
                     {
                         //Preguntamos si el usuario esta seguro de eliminar el producto
-                        var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar EL Producto?", "Tienda AS | Precaución", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                        var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar EL Producto?", "Tienda Albuquerque | Precaución", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
                         if (ValidarEliminar == DialogResult.Yes)
                         {
@@ -90,13 +90,13 @@ namespace CapaVista
 
                             if (resultado>0)
                             {
-                                MessageBox.Show("Producto Eliminado con Exito", "Tienda AS | Producto",
+                                MessageBox.Show("Producto Eliminado con Exito", "Tienda Albuquerque | Producto",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 CargarPRoducto();
                             }
                             else
                             {
-                                MessageBox.Show("Producto no se Elimino", "Tienda AS | Producto",
+                                MessageBox.Show("Producto no se Elimino", "Tienda Albuquerque | Producto",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }

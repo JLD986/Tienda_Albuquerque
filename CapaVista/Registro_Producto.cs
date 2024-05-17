@@ -29,7 +29,7 @@ namespace CapaVista
 
             if (_id > 0)
             {
-                this.Text = "Tienda Store_AS | Edicion de Productos";
+                this.Text = "Tienda Albuquerque | Edicion de Productos";
                 Guardar.Text = "Update";
                 Titulo.Text = "Edicion de Productos";
                 CargarDatosProdutos(_id);
@@ -81,53 +81,53 @@ namespace CapaVista
 
                 if (string.IsNullOrEmpty(textBox1.Text))
                 {
-                    MessageBox.Show("Se Requiere Nombre del Producto", "Tienda AS | Registro Producto",
+                    MessageBox.Show("Se Requiere Nombre del Producto", "Tienda Albuquerque | Registro Producto",
                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox1.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(DescripcionProducto.Text))
                 {
-                    MessageBox.Show("Se Requiere Descripcion del Producto", "Tienda AS | Registro Producto",
+                    MessageBox.Show("Se Requiere Descripcion del Producto", "Tienda Albuquerque | Registro Producto",
                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     DescripcionProducto.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(Stock.Text) || Convert.ToDecimal(Stock.Text) == 0)
                 {
-                    MessageBox.Show("Se Requiere Existencias del Producto", "Tienda AS | Registro Producto",
+                    MessageBox.Show("Se Requiere Existencias del Producto", "Tienda Albuquerque | Registro Producto",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Stock.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(PrecioUni.Text) || Convert.ToDecimal(PrecioUni.Text) == 0)
                 {
-                    MessageBox.Show("Se Requiere Precio del Producto", "Tienda AS | Registro Producto",
+                    MessageBox.Show("Se Requiere Precio del Producto", "Tienda Albuquerque | Registro Producto",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     PrecioUni.Focus();
                     return;
                 }
                 if (!Activo.Checked)
                 {
-                    var dialogo = MessageBox.Show("¿Deseas Dejar El Producto Inactivo?", "Tienda AS | Registro Producto",
+                    var dialogo = MessageBox.Show("¿Deseas Dejar El Producto Inactivo?", "Tienda Albuquerque | Registro Producto",
                         MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (dialogo != DialogResult.Yes)
                     {
-                        MessageBox.Show("Selecciona el estado como ACTIVO", "Tienda  AS| Registro Productos",
+                        MessageBox.Show("Selecciona el estado como ACTIVO", "Tienda  Albuquerque | Registro Productos",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                 }
                 if (cbxMarca.SelectedIndex==0)
                 {
-                    MessageBox.Show("Selecciona una Marca del Producto", "Tienda AS | Registro Producto",
+                    MessageBox.Show("Selecciona una Marca del Producto", "Tienda Albuquerque | Registro Producto",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (cbxCategoria.SelectedIndex == 0)
                 {
-                    MessageBox.Show("Selecciona una Categoria del Producto", "Tienda AS | Registro Producto",
+                    MessageBox.Show("Selecciona una Categoria del Producto", "Tienda Albuquerque | Registro Producto",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -143,13 +143,13 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("¡ EL Producto se Actualizo Exitosamente !", "Tienda AS | Registro Productos",
+                        MessageBox.Show("¡ EL Producto se Actualizo Exitosamente !", "Tienda Albuquerque | Registro Productos",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Error! El producto no se actualizo", "Tienda AS | Registro Productos",
+                        MessageBox.Show("Error! El producto no se actualizo", "Tienda Albuquerque | Registro Productos",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -162,20 +162,20 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("¡ EL Producto se añadió Exitosamente !", "Tienda AS | Registro Productos",
+                        MessageBox.Show("¡ EL Producto se añadió Exitosamente !", "Tienda Albuquerque | Registro Productos",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Error! El producto no se guardo", "Tienda AS | Registro Productos",
+                        MessageBox.Show("Error! El producto no se guardo", "Tienda Albuquerque | Registro Productos",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception ex) 
             {
-                MessageBox.Show($"Ocurrio un error {ex.Message} :(", "Tienda AS | Registro Productos",
+                MessageBox.Show($"Ocurrio un error {ex.Message} :(", "Tienda Albuquerque | Registro Productos",
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 

@@ -97,22 +97,22 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("Venta realizada con Exito","Tienda AS | Ventas",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("Venta realizada con Exito", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK,MessageBoxIcon.Information);
                         Limpiar();
                     }
                     else
                     {
-                        MessageBox.Show("La venta no se logro realizar", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("La venta no se logro realizar", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Debes realizar una venta para procesarla", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Debes realizar una venta para procesarla", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch(Exception ex)
             {
-                MessageBox.Show($"{ex.Message}","Tienda AS | Ventas",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show($"{ex.Message}", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
         }
@@ -137,7 +137,7 @@ namespace CapaVista
 
                             if (encontrarCodigo == codigo)
                             {
-                                MessageBox.Show("EL Producto es existente. Escoge otro a tu gusto","Tienda AS | Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                                MessageBox.Show("EL Producto es existente. Escoge otro a tu gusto","Tienda Albuquerque | Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                                 return;
                             }
                         }
@@ -156,18 +156,18 @@ namespace CapaVista
                     }
                     else
                     {
-                        MessageBox.Show("Digita una cantidad valida entre las exitencias", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Digita una cantidad valida entre las exitencias", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Ingresa la cantidad que deseas", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ingresa la cantidad que deseas", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
             }catch(Exception)
             {
-                MessageBox.Show("Ocurrio un ERROR","Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocurrio un ERROR", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -241,7 +241,7 @@ namespace CapaVista
                         if (preciofinal<=0)
                         {
                             e.Cancel = true;
-                            MessageBox.Show("Ingresa un precio valido", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Ingresa un precio valido", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
@@ -254,13 +254,13 @@ namespace CapaVista
                     else
                     {
                         e.Cancel = true;
-                        MessageBox.Show("No se permite caracteres o espacios en blanco", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("No se permite caracteres o espacios en blanco", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al ingresar la cantidad", "Tienda AS | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al ingresar la cantidad", "Tienda Albuquerque | Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -270,7 +270,7 @@ namespace CapaVista
             {
                 if (DetalleVentaData.Columns[e.ColumnIndex].Name.Equals("Eliminar"))
                 {
-                    var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar el producto de la venta?", "Tienda AS | Precaución", MessageBoxButtons.YesNo,
+                    var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar el producto de la venta?", "Tienda Albuquerque | Precaución", MessageBoxButtons.YesNo,
                         MessageBoxIcon.Question);
 
                     if (ValidarEliminar==DialogResult.Yes)

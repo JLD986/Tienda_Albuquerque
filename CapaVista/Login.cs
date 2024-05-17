@@ -77,9 +77,14 @@ namespace CapaVista
             }
             else
             {
-                MessageBox.Show("Error!! Intentalo de nuevo", "Store AS | Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error!! Intentalo de nuevo", "Tienda Albuquerque | Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Limpiar();
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

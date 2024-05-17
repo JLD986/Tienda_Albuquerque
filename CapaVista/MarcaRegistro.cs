@@ -24,7 +24,7 @@ namespace CapaVista
 
             if (_id > 0)
             {
-                this.Text = "Tienda Store_AS | Edicion de Marcas";
+                this.Text = "Tienda Albuquerque | Edicion de Marcas";
                 GuardarMarca.Text = "Update";
                 NombreMarca.Enabled = false;
                 Titulo.Text = "Edicion de Marca";
@@ -57,26 +57,26 @@ namespace CapaVista
 
                 if (string.IsNullOrEmpty(NombreMarca.Text))
                 {
-                    MessageBox.Show("Se Requiere Nombre de la Marca", "Tienda AS | Registro Marca",
+                    MessageBox.Show("Se Requiere Nombre de la Marca", "Albuquerque | Registro Marca",
                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     NombreMarca.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(Descripcion.Text))
                 {
-                    MessageBox.Show("Se Requiere Descripcion de la Marca", "Tienda AS | Registro Registro Marca",
+                    MessageBox.Show("Se Requiere Descripcion de la Marca", "Tienda Albuquerque | Registro Registro Marca",
                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Descripcion.Focus();
                     return;
                 }
                 if (!checkMarca.Checked)
                 {
-                    var dialogo= MessageBox.Show("¿Deseas dejar la Marca Inactiva?", "Tienda AS | Registro Marca",
+                    var dialogo= MessageBox.Show("¿Deseas dejar la Marca Inactiva?", "Tienda Albuquerque | Registro Marca",
                            MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (dialogo!=DialogResult.Yes)
                     {
-                        MessageBox.Show("Selecciona el estado como ACTIVO", "Tienda  AS| Registro Marca",
+                        MessageBox.Show("Selecciona el estado como ACTIVO", "Tienda  Albuquerque | Registro Marca",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
@@ -93,13 +93,13 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("¡ La Marca se Actualizo Exitosamente !", "Tienda AS | Edicion Marca",
+                        MessageBox.Show("¡ La Marca se Actualizo Exitosamente !", "Tienda Albuquerque | Edicion Marca",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Error! La Marca no se actualizo", "Tienda AS | Edicion Marca",
+                        MessageBox.Show("Error! La Marca no se actualizo", "Tienda Albuquerque | Edicion Marca",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -112,21 +112,21 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("¡La Marca se añadió Exitosamente!", "Tienda AS | Registro Marca",
+                        MessageBox.Show("¡La Marca se añadió Exitosamente!", "Tienda Albuquerque | Registro Marca",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
 
                     }
                     else
                     {
-                        MessageBox.Show("Error! La Marca no se guardo", "Tienda AS | Registro Marca",
+                        MessageBox.Show("Error! La Marca no se guardo", "Tienda Albuquerque | Registro Marca",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}", "Tienda AS | Registro Marca",
+                MessageBox.Show($"{ex.Message}", "Tienda Albuquerque | Registro Marca",
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

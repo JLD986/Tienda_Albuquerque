@@ -73,7 +73,7 @@ namespace CapaVista
 
                     }else if (TablaMarcas.Columns[e.ColumnIndex].Name.Equals("Eliminar"))
                     {
-                        var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar La Marca?", "Tienda AS | Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        var ValidarEliminar = MessageBox.Show("¿Deseas Eliminar La Marca?", "Tienda Albuquerque | Precaución", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (ValidarEliminar == DialogResult.Yes)
                         {
@@ -83,13 +83,13 @@ namespace CapaVista
 
                             if (resultado > 0)
                             {
-                                MessageBox.Show("Marca Eliminada con Exito", "Tienda AS | Eliminar Marca",
+                                MessageBox.Show("Marca Eliminada con Exito", "Tienda Albuquerque | Eliminar Marca",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 CargarMarca();
                             }
                             else
                             {
-                                MessageBox.Show("La Marca no se Elimino", "Tienda AS | Eliminar Marca",
+                                MessageBox.Show("La Marca no se Elimino", "Tienda Albuquerque | Eliminar Marca",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }

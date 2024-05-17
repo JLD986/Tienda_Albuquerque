@@ -71,5 +71,10 @@ namespace CapaVista
             MantenimientoMetodoPago metodos = new MantenimientoMetodoPago();
             metodos.ShowDialog();
         }
+
+        private void Ventas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

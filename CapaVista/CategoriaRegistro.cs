@@ -27,7 +27,7 @@ namespace CapaVista
 
             if (_id > 0)
             {
-                this.Text = "Tienda Store_AS | Edicion de Categorias";
+                this.Text = "Tienda Store_Albuquerque | Edicion de Categorias";
                 GuardarProducto.Text = "Update";
                 Titulo.Text = "Edicion de Categorias";
                 NombreCategoria.Enabled = false;
@@ -65,26 +65,26 @@ namespace CapaVista
 
                 if (string.IsNullOrEmpty(NombreCategoria.Text))
                 {
-                    MessageBox.Show("Se Requiere Nombre de la Categoria", "Tienda AS | Registro Categoria",
+                    MessageBox.Show("Se Requiere Nombre de la Categoria", "Tienda Albuquerque | Registro Categoria",
                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     NombreCategoria.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(Descripcion.Text))
                 {
-                    MessageBox.Show("Se Requiere Descripcion de la Categoria", "Tienda AS | Registro Categoria",
+                    MessageBox.Show("Se Requiere Descripcion de la Categoria", "Tienda Albuquerque | Registro Categoria",
                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Descripcion.Focus();
                     return;
                 }
                 if (!checkCategoria.Checked)
                 {
-                    var dialogo = MessageBox.Show("¿Deseas Dejar La Categoria Inactiva?", "Tienda AS | Registro Categoria",
+                    var dialogo = MessageBox.Show("¿Deseas Dejar La Categoria Inactiva?", "Tienda Albuqueruqe | Registro Categoria",
                        MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (dialogo != DialogResult.Yes)
                     {
-                        MessageBox.Show("Selecciona el estado como ACTIVO", "Tienda  AS| Registro Categoria",
+                        MessageBox.Show("Selecciona el estado como ACTIVO", "Tienda  Albuquerque| Registro Categoria",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
@@ -101,13 +101,13 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("¡ La Categoria se Actualizo Exitosamente !", "Tienda AS | Registro Categoria",
+                        MessageBox.Show("¡ La Categoria se Actualizo Exitosamente !", "Tienda Albuquerque | Registro Categoria",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Error! La Categoria no se actualizo", "Tienda AS | Registro Categoria",
+                        MessageBox.Show("Error! La Categoria no se actualizo", "Tienda Albuquerque | Registro Categoria",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -120,20 +120,20 @@ namespace CapaVista
 
                     if (resultado > 0)
                     {
-                        MessageBox.Show("¡La Categoria se añadió Exitosamente!", "Tienda AS | Registro Categoria",
+                        MessageBox.Show("¡La Categoria se añadió Exitosamente!", "Tienda Albuquerque | Registro Categoria",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Error! La Categoria no se guardo", "Tienda AS | Registro Categoria",
+                        MessageBox.Show("Error! La Categoria no se guardo", "Tienda Albuquerque | Registro Categoria",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message }", "Tienda AS | Registro Categoria",
+                MessageBox.Show($"{ex.Message }", "Tienda Albuquerque | Registro Categoria",
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
